@@ -8,7 +8,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Harsh's Abode</title>
 </head>
 
@@ -18,26 +18,23 @@
             <h2 class="logo">Harsh's Abode</h2>
             <nav class="nav nav-fill mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/hrk84ya/" target="_blank"><i
+                    <a class="nav-link" href="https://www.linkedin.com/in/hrk84ya/" target="_blank" aria-label="LinkedIn"><i
                             class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/hrk84ya" target="_blank"><i
+                    <a class="nav-link" href="https://twitter.com/hrk84ya" target="_blank" aria-label="Twitter"><i
                             class="fab fa-twitter"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/hrk84ya/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/hrk84ya/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Hrk84ya" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="https://github.com/Hrk84ya" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </li>
             </nav>
 
-
-            <input type="text" id="nav-search" class="nav-search mx-auto" name="" class="form-control">
             <div class="ml-0 mr-0 pb-1">
                 <nav class="navbar navbar-expand-md">
-
                     <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
                         aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
                         aria-label="Toggle navigation">
@@ -46,30 +43,34 @@
                     <div id="my-nav" class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NEWS</a>
+                                <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">HISTORY</a>
+                                <a class="nav-link" href="news.html">NEWS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CULTURE</a>
+                                <a class="nav-link" href="history.html">HISTORY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">TECH</a>
+                                <a class="nav-link" href="culture.html">CULTURE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">LIFE</a>
+                                <a class="nav-link" href="tech.html">TECH</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">OPINION</a>
+                                <a class="nav-link" href="life.html">LIFE</a>
                             </li>
                             <li class="nav-item">
-                                <form action="" method="POST">
-                                    <div class="input-group mt-0 mx-auto" style="width:16px;">
-
-                                        <div class="">
-                                            <img src="images/search-icon.png" id="toggle-search"
-                                                class="ml-2 toggle-search" alt="search icon">
+                                <a class="nav-link" href="opinion.html">OPINION</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="" method="POST" class="search-form">
+                                    <div class="input-group mt-0 mx-auto">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <div class="input-group-append">
+                                            <button class="btn search-btn" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -82,31 +83,31 @@
 
         <div class="row ml-0 mr-0">
             <div class="col-md-6 pr-0">
-                <div class="card">
-                    <img class="card-img" src="/images/left-img.jpg" alt="">
+                <div class="card featured-card">
+                    <img class="card-img" src="/images/left-img.jpg" alt="Neural Networks">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Neural Networks</p>
-                        <hr />
+                        <span class="category">Neural Networks</span>
                         <h4>Brain of the model</h4>
+                        <p class="card-text">Exploring the fascinating world of neural networks and their applications in modern AI.</p>
                         <a href="#" class="btn">READ MORE</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 pl-0">
-                <div class="card">
-                    <img class="card-img" src="/images/right-img.jpg" alt="">
+                <div class="card featured-card">
+                    <img class="card-img" src="/images/right-img.jpg" alt="Tools and Framework">
                     <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Tools</p>
-                        <hr />
+                        <span class="category">Tools</span>
                         <h4>Tools and Framework</h4>
+                        <p class="card-text">Discover the essential tools and frameworks that power modern development.</p>
                         <a href="article.html" class="btn">READ MORE</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 pr-0 first">
-                <div class="card">
-                    <img class="card-img" src="/images/architecture.png" alt="">
+                <div class="card category-card">
+                    <img class="card-img" src="/images/architecture.png" alt="Architecture">
                     <div class="card-img-overlay">
                         <h5>Architecture</h5>
                     </div>
@@ -114,8 +115,8 @@
             </div>
 
             <div class="col-md-3 pl-0 pr-0">
-                <div class="card">
-                    <img class="card-img" src="/images/interior.png" alt="">
+                <div class="card category-card">
+                    <img class="card-img" src="/images/interior.png" alt="Interior">
                     <div class="card-img-overlay">
                         <h5>Interior</h5>
                     </div>
@@ -123,8 +124,8 @@
             </div>
 
             <div class="col-md-3 pl-0 pr-0">
-                <div class="card">
-                    <img class="card-img" src="/images/food.png" alt="">
+                <div class="card category-card">
+                    <img class="card-img" src="/images/food.png" alt="Food">
                     <div class="card-img-overlay">
                         <h5>Food</h5>
                     </div>
@@ -132,15 +133,14 @@
             </div>
 
             <div class="col-md-3 pl-0 last">
-                <div class="card">
-                    <img class="card-img" src="/images/travel.png" alt="">
+                <div class="card category-card">
+                    <img class="card-img" src="/images/travel.png" alt="Travel">
                     <div class="card-img-overlay">
                         <h5>Travel</h5>
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
 
     <div class="container-fluid video-player">
@@ -154,82 +154,93 @@
             <div class="play-list">
                 <div class="owl-carousel owl-carousel4 owl-theme">
                     <div>
-                        <div class="card"> <img class="card-img link-img"
-                                data-link="https://www.youtube.com/embed/Ym1iH8-GQOE" src="/images/play1.jpg" 
-                                alt="Statistics">
+                        <div class="card video-card">
+                            <img class="card-img link-img" data-link="https://www.youtube.com/embed/Ym1iH8-GQOE" 
+                                src="/images/play1.jpg" alt="Statistics">
+                            <div class="card-img-overlay">
+                                <h5>Statistics</h5>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card"> <img class="card-img link-img"
-                                data-link="https://www.youtube.com/embed/TPMlZxRRaBQ" src="/images/play2.jpg"
-                                alt="Data Visualization">
-
+                        <div class="card video-card">
+                            <img class="card-img link-img" data-link="https://www.youtube.com/embed/TPMlZxRRaBQ" 
+                                src="/images/play2.jpg" alt="Data Visualization">
+                            <div class="card-img-overlay">
+                                <h5>Data Visualization</h5>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card"> <img class="card-img link-img"
-                                data-link="https://www.youtube.com/embed/i_LwzRVP7bg" src="/images/play3.jpg"
-                                alt="Machine Learning">
-
+                        <div class="card video-card">
+                            <img class="card-img link-img" data-link="https://www.youtube.com/embed/i_LwzRVP7bg" 
+                                src="/images/play3.jpg" alt="Machine Learning">
+                            <div class="card-img-overlay">
+                                <h5>Machine Learning</h5>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card"> <img class="card-img link-img"
-                                data-link="https://www.youtube.com/embed/5NgNicANyqM" src="/images/play4.jpg"  
-                                alt="Artificial Intelligence">
-
+                        <div class="card video-card">
+                            <img class="card-img link-img" data-link="https://www.youtube.com/embed/5NgNicANyqM" 
+                                src="/images/play4.jpg" alt="Artificial Intelligence">
+                            <div class="card-img-overlay">
+                                <h5>Artificial Intelligence</h5>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card"> <img class="card-img link-img"
-                                data-link="https://www.youtube.com/embed/mEsleV16qdo" src="/images/play5.jpg" 
-                                alt="Robotics">
-
+                        <div class="card video-card">
+                            <img class="card-img link-img" data-link="https://www.youtube.com/embed/mEsleV16qdo" 
+                                src="/images/play5.jpg" alt="Robotics">
+                            <div class="card-img-overlay">
+                                <h5>Robotics</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <hr>
 
-
-
             <div class="row vr-gallery">
                 <div class="col-md-8 mb-4">
                     <div class="row">
                         <div class="col-md-12 col-lg-7 pr-0 pd-md">
-                            <img src="/images/gallery-img1.png" alt="">
+                            <img src="/images/gallery-img1.png" alt="Artificial Intelligence" class="img-fluid">
                         </div>
                         <div class="col-md-12 col-lg-5 light-bg cus-pd cus-arrow-left">
-                            <p><small>October 21, 2024</small></p>
+                            <span class="date">October 21, 2024</span>
                             <h3>Artificial Intelligence</h3>
                             <p>
                                 Artificial intelligence (AI) is technology that enables computers and machines to simulate human learning, 
                                 comprehension, problem solving, decision making, creativity and autonomy.
                             </p>
+                            <a href="#" class="btn">Read More</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 pl-4 mb-4">
                     <div class="card">
-                        <img class="card-img h-100" src="/images/video-cover1.jpg" alt="">
+                        <img class="card-img h-100" src="/images/video-cover1.jpg" alt="Weekend In Boston">
                         <div class="card-img-overlay opacity text-center">
-                            <a class="play-1" href="https://www.youtube.com/watch?v=tF4DML7FIWk&ab_channel=BostonDynamics"><img
-                                    src="/images/play-icon.png" alt=""></a>
+                            <a class="play-1" href="https://www.youtube.com/watch?v=tF4DML7FIWk&ab_channel=BostonDynamics">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
                             <h5 class="card-title">Weekend In Boston</h5>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-8 mb-4 pr-0 pd-md">
                     <div class="card">
-                        <img class="card-img h-100" src="/images/gallery-img2.png" alt="">
+                        <img class="card-img h-100" src="/images/gallery-img2.png" alt="Communication">
                         <div class="card-img-overlay">
                             <div class="contact-box">
-                                <p><small>October 21, 2024</small></p>
+                                <span class="date">October 21, 2024</span>
                                 <h3>Communication</h3>
                                 <p>Effective communication fosters understanding and collaboration, essential for building strong relationships.</p>
+                                <a href="#" class="btn">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -237,11 +248,12 @@
 
                 <div class="col-md-4 pl-4 mb-4">
                     <div class="card">
-                        <img class="card-img-top" src="/images/gallery-img3.jpg" alt="">
+                        <img class="card-img-top" src="/images/gallery-img3.jpg" alt="Travel">
                         <div class="card-body bg-gray cus-pd2 cus-arrow-up">
-                            <p><small>October 21, 2024</small></p>
+                            <span class="date">October 21, 2024</span>
                             <h3>Travel</h3>
                             <p>Travel broadens perspectives, enriching our understanding of diverse cultures and fostering personal growth.</p>
+                            <a href="#" class="btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -444,20 +456,23 @@
             <h2 class="logo text-center">Harsh's Abode</h2>
             <nav class="nav nav-fill mx-auto mt-5">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/hrk84ya/" target="_blank"><i
+                    <a class="nav-link" href="https://www.linkedin.com/in/hrk84ya/" target="_blank" aria-label="LinkedIn"><i
                             class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/hrk84ya" target="_blank"><i
+                    <a class="nav-link" href="https://twitter.com/hrk84ya" target="_blank" aria-label="Twitter"><i
                             class="fab fa-twitter"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/hrk84ya/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/hrk84ya/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Hrk84ya" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="https://github.com/Hrk84ya" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </li>
             </nav>
+            <div class="copyright">
+                <p>&copy; 2025 Harsh's Abode. All rights reserved.</p>
+            </div>
         </div>
         
     </footer>
