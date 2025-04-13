@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Tech - Harsh's Abode</title>
+    <style>
+        .tech-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .tech-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+        .tech-badge {
+            background: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .code-snippet {
+            background: #2d2d2d;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .tech-stats {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        .tech-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mt-0 pt-0">
+        <div class="bg-cover clearfix pt-3">
+            <h2 class="logo">Harsh's Abode</h2>
+            <nav class="nav nav-fill mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/hrk84ya/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/hrk84ya" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/hrk84ya/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Hrk84ya" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </li>
+            </nav>
+
+            <div class="ml-0 mr-0 pb-1">
+                <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                        aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                        aria-label="Toggle navigation">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html">HISTORY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="culture.html">CULTURE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tech.html">TECH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LIFE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">OPINION</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="" method="POST" class="search-form">
+                                    <div class="input-group mt-0 mx-auto">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <div class="input-group-append">
+                                            <button class="btn search-btn" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="tech-header">
+        <div class="container">
+            <h1 class="text-white mb-4">Technology & Innovation</h1>
+            <p class="text-light">Exploring the latest in technology, from AI to quantum computing</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tech-grid">
+            <div class="card tech-card">
+                <div class="card-body">
+                    <span class="tech-badge">Artificial Intelligence</span>
+                    <h3>Neural Networks: The Future of AI</h3>
+                    <p>Deep learning models are revolutionizing how we approach complex problems in AI.</p>
+                    <div class="code-snippet">
+                        <pre><code>def neural_network(input_data):
+    hidden_layer = relu(dot(input_data, weights) + bias)
+    output = sigmoid(dot(hidden_layer, output_weights))
+    return output</code></pre>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card tech-card">
+                <div class="card-body">
+                    <span class="tech-badge">Web Development</span>
+                    <h3>Modern Web Architecture</h3>
+                    <p>Exploring the latest trends in web development and architecture patterns.</p>
+                    <div class="tech-stats">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <i class="fas fa-server tech-icon"></i>
+                                <h5>Backend</h5>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-code tech-icon"></i>
+                                <h5>Frontend</h5>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-database tech-icon"></i>
+                                <h5>Database</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card tech-card">
+                <div class="card-body">
+                    <span class="tech-badge">Cloud Computing</span>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Understanding modern cloud architecture and deployment strategies.</p>
+                    <div class="tech-stats">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <i class="fab fa-aws tech-icon"></i>
+                                <h5>AWS</h5>
+                            </div>
+                            <div class="col-6">
+                                <i class="fab fa-google tech-icon"></i>
+                                <h5>GCP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="card tech-card">
+                    <div class="card-body">
+                        <span class="tech-badge">Machine Learning</span>
+                        <h3>Deep Learning Frameworks</h3>
+                        <p>A comprehensive guide to the most popular deep learning frameworks and their applications.</p>
+                        <div class="code-snippet">
+                            <pre><code>import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dense(10, activation='softmax')
+])</code></pre>
+                        </div>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card tech-card">
+                    <div class="card-body">
+                        <span class="tech-badge">DevOps</span>
+                        <h3>CI/CD Pipeline</h3>
+                        <p>Modern approaches to continuous integration and deployment.</p>
+                        <div class="tech-stats">
+                            <i class="fas fa-cogs tech-icon"></i>
+                            <h5>Automation</h5>
+                        </div>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html> 
