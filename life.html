@@ -80,95 +80,232 @@
                 </nav>
             </div>
         </div>
+    </header>
 
-        <!-- Featured News Section -->
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section-title">Life & Lifestyle</h2>
+    <!-- Hero Section -->
+    <section class="life-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Live Your Best Life</h1>
+                        <p class="hero-subtitle">Discover insights, tips, and inspiration for a more balanced, fulfilling lifestyle.</p>
+                        <div class="hero-cta">
+                            <a href="#featured" class="btn btn-primary">Explore Articles</a>
+                            <a href="#newsletter" class="btn btn-outline">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="/images/life-hero.jpg" alt="Lifestyle" class="img-fluid rounded">
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Stories</h2>
+                <p class="section-subtitle">Curated content to inspire your daily life</p>
+            </div>
             
-            <!-- Main Featured Article -->
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <div class="card featured-article">
-                        <img class="card-img" src="/images/life-featured.jpg" alt="Modern Living">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="featured-content">
-                                <span class="category">Lifestyle</span>
-                                <h3>The Art of Mindful Living in a Digital Age</h3>
-                                <p class="card-text">Discover how to maintain balance and mindfulness in our increasingly connected world.</p>
-                                <a href="#" class="btn">READ MORE</a>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="featured-main">
+                        <div class="card featured-card">
+                            <img src="/images/life-featured.jpg" class="card-img" alt="Featured Story">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <div class="featured-content">
+                                    <span class="category">Wellness</span>
+                                    <h3>The Art of Mindful Living in a Digital Age</h3>
+                                    <p>Discover how to maintain balance and mindfulness in our increasingly connected world.</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="/images/author-avatar.jpg" class="rounded-circle mr-2" width="30" height="30" alt="Author">
+                                        <span class="text-white">By Sarah Mitchell</span>
+                                        <span class="text-white ml-2">• 5 min read</span>
+                                    </div>
+                                    <a href="#" class="btn btn-light mt-3">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h4 class="trending-title">Trending in Life</h4>
-                            <ul class="list-unstyled trending-list">
-                                <li>
-                                    <span class="trend-number">01</span>
-                                    <a href="#">Sustainable Living Practices</a>
-                                </li>
-                                <li>
-                                    <span class="trend-number">02</span>
-                                    <a href="#">Digital Wellness Tips</a>
-                                </li>
-                                <li>
-                                    <span class="trend-number">03</span>
-                                    <a href="#">Work-Life Balance</a>
-                                </li>
-                                <li>
-                                    <span class="trend-number">04</span>
-                                    <a href="#">Modern Home Design</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- News Grid -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card news-card">
-                        <img class="card-img-top" src="/images/life-1.jpg" alt="Wellness">
-                        <div class="card-body">
-                            <span class="date">March 15, 2024</span>
-                            <h5>Wellness in the Modern World</h5>
-                            <p>Exploring holistic approaches to health and wellness in today's fast-paced environment.</p>
-                            <a href="#" class="btn btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card news-card">
-                        <img class="card-img-top" src="/images/life-2.jpg" alt="Relationships">
-                        <div class="card-body">
-                            <span class="date">March 14, 2024</span>
-                            <h5>Building Meaningful Relationships</h5>
-                            <p>How to nurture connections in an increasingly digital world.</p>
-                            <a href="#" class="btn btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card news-card">
-                        <img class="card-img-top" src="/images/life-3.jpg" alt="Personal Growth">
-                        <div class="card-body">
-                            <span class="date">March 13, 2024</span>
-                            <h5>Personal Growth Journey</h5>
-                            <p>Strategies for continuous self-improvement and development.</p>
-                            <a href="#" class="btn btn-sm">Read More</a>
+                <div class="col-lg-4">
+                    <div class="featured-sidebar">
+                        <div class="card sidebar-card mb-4">
+                            <div class="card-body">
+                                <h4 class="sidebar-title">Trending Now</h4>
+                                <div class="trending-list">
+                                    <div class="trending-item d-flex align-items-center mb-3">
+                                        <div class="trend-number">01</div>
+                                        <div class="trend-content">
+                                            <h5>Sustainable Living Practices</h5>
+                                            <span class="trend-meta"><i class="fas fa-fire text-danger"></i> 2.5K views</span>
+                                        </div>
+                                    </div>
+                                    <div class="trending-item d-flex align-items-center mb-3">
+                                        <div class="trend-number">02</div>
+                                        <div class="trend-content">
+                                            <h5>Digital Wellness Tips</h5>
+                                            <span class="trend-meta"><i class="fas fa-fire text-danger"></i> 1.8K views</span>
+                                        </div>
+                                    </div>
+                                    <div class="trending-item d-flex align-items-center mb-3">
+                                        <div class="trend-number">03</div>
+                                        <div class="trend-content">
+                                            <h5>Work-Life Balance</h5>
+                                            <span class="trend-meta"><i class="fas fa-fire text-danger"></i> 1.5K views</span>
+                                        </div>
+                                    </div>
+                                    <div class="trending-item d-flex align-items-center">
+                                        <div class="trend-number">04</div>
+                                        <div class="trend-content">
+                                            <h5>Modern Home Design</h5>
+                                            <span class="trend-meta"><i class="fas fa-fire text-danger"></i> 1.2K views</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Lifestyle Categories</h2>
+                <p class="section-subtitle">Explore topics that matter to you</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Wellness</h3>
+                        <p>Tips and advice for physical and mental well-being</p>
+                        <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home & Living</h3>
+                        <p>Ideas for creating a beautiful and functional living space</p>
+                        <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food & Nutrition</h3>
+                        <p>Healthy recipes and dietary advice</p>
+                        <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="latest-articles">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Fresh perspectives on living well</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="/images/life-1.jpg" alt="Article 1" class="img-fluid">
+                            <span class="article-category">Wellness</span>
+                        </div>
+                        <div class="article-content">
+                            <h4>Wellness in the Modern World</h4>
+                            <p>Exploring holistic approaches to health and wellness in today's fast-paced environment.</p>
+                            <div class="article-meta">
+                                <span class="date">March 15, 2024</span>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="/images/life-2.jpg" alt="Article 2" class="img-fluid">
+                            <span class="article-category">Relationships</span>
+                        </div>
+                        <div class="article-content">
+                            <h4>Building Meaningful Relationships</h4>
+                            <p>How to nurture connections in an increasingly digital world.</p>
+                            <div class="article-meta">
+                                <span class="date">March 14, 2024</span>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="/images/life-3.jpg" alt="Article 3" class="img-fluid">
+                            <span class="article-category">Personal Growth</span>
+                        </div>
+                        <div class="article-content">
+                            <h4>Personal Growth Journey</h4>
+                            <p>Strategies for continuous self-improvement and development.</p>
+                            <div class="article-meta">
+                                <span class="date">March 13, 2024</span>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="newsletter-content">
+                            <h2>Stay Updated</h2>
+                            <p>Subscribe to our newsletter for the latest lifestyle tips and inspiration.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
