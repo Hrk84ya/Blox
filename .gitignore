@@ -1,0 +1,27 @@
+# Kiro
+.kiro/
+
+# Dependencies
+node_modules/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/staticfiles/
+
+# Environment
+.env
+
+# Docker
+pgdata/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

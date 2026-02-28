@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Terminal Theme (dark - default) */
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --accent-green: #00ff41;
+  --accent-cyan: #00e5ff;
+  --text-primary: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --border-color: #2a2a2a;
+}
+
+.light {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --accent-green: #00cc33;
+  --accent-cyan: #0099cc;
+  --text-primary: #1a1a1a;
+  --text-muted: #555555;
+  --border-color: #d0d0d0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Blinking cursor effect for CTA buttons */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '▌';
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  color: var(--accent-green);
+}
